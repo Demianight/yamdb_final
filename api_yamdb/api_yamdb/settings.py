@@ -3,7 +3,6 @@ from datetime import timedelta
 
 import dotenv
 
-
 dotenv.load_dotenv()
 
 
