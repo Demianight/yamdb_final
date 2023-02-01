@@ -5,6 +5,6 @@ WORKDIR /app
 
 COPY . .
 # Какой-нибудь комментарий.
-RUN pip install -r ./requirements.txt --no-cache-dir
+RUN pip install -r ./api_yamdb/requirements.txt --no-cache-dir
 
-CMD ["gunicorn", "api_yamdb.wsgi:application", "--bind", "0:8000" ]
+CMD ["gunicorn", "api_yamdb.wsgi:application", "--bind", "8000:8000" ]
