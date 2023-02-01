@@ -55,7 +55,9 @@ jobs:
         key: ${{ secrets.SSH_KEY }}
 
         script: |
-          cd infra
+          pwd
+          ls -a
+          cd api_yamdb
           sudo docker-compose stop
           sudo docker-compose rm web
           touch .env
