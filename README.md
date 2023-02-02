@@ -1,3 +1,5 @@
+IP address: 51.250.105.179
+
 # yamdb_final
 [![Django-app workflow](https://github.com/Demianight/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)](https://github.com/Demianight/yamdb_final/actions/workflows/yamdb_workflow.yml)
  
