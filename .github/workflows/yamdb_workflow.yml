@@ -43,7 +43,7 @@ jobs:
         with:
           push: true
           file: api_yamdb/Dockerfile
-          tags: ${{ secrets.DOCKER_USERNAME }}/infra_actions:latest
+          tags: ${{ secrets.DOCKER_USERNAME }}/api_yamdb:latest
   deploy:
     runs-on: ubuntu-latest
     needs: build_and_push_to_docker_hub
@@ -57,7 +57,7 @@ jobs:
         key: ${{ secrets.SSH_KEY }}
 
         # Without removing .env file it adds same strings to file
-        # Obviously it's useless
+        # Obviously it's useless, so deleting it first
         script: |
           sudo docker-compose stop
           sudo docker-compose rm web
