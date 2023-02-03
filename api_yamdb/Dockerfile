@@ -6,4 +6,4 @@ COPY . .
 
 RUN pip install -r ./api_yamdb/requirements.txt --no-cache-dir
 
-CMD ["gunicorn", "api_yamdb/api_yamdb.wsgi:application", "--bind", "0:8000" ]
+CMD ["gunicorn", "app/api_yamdb.wsgi:application", "--bind", "0:8000" ]
